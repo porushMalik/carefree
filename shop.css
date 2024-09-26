@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 690px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-height: 100%;
+    
+}
+
+.shopping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+h2{
+    margin-left: 100px;
+}
+
+.shop{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    background: rgb(0, 152, 0, 0.5);
+    min-width: 90%;
+    max-width: 100%;
+    min-height: 400px;
+    max-height: 100%px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 6px;
+    animation: fadein 0.6s ease-in-out;
+}
+
+.shop0 button{
+    background-color: rgb(0, 152, 0, 0.5);
+}
+
+.shop0 button:hover{
+    background-color: rgba(0, 61, 0, 0.5);
+}
+
+@keyframes fadein{
+    from{
+        scale: 0.8;
+        opacity: 0;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.products .pro1{
+    animation: fadeon 0.7s ease-in-out;   
+}
+
+.products .pro2{
+    animation: fadeon 1s ease-in-out;   
+}
+
+.products .pro3{
+    animation: fadeon 1.3s ease-in-out;   
+}
+
+.products .pro4{
+    animation: fadeon 1.6s ease-in-out;   
+}
+
+@keyframes fadeon {
+    from{
+        scale: 1.2;
+        opacity: 0;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 30px;
+}
+
+.shop .image{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 350px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.shop0 .image{
+    width: 280px;
+    height:250px
+}
+
+.product{
+    width: 220px;
+    height: 330px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* margin-left: 200px; */
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+}
+
+.product .content{
+    padding: 8px;
+}
+
+.content h4{
+    font-size: 20px;
+}
+
+.content p{
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.content .dis{
+    color: rgba(101, 81, 0, 1);
+}
+
+.product img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.lining{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    background: black;
+}
+
+.shop1{
+    background-color: rgb(0, 157, 255, 0.5);
+}
+
+.shop1 button{
+    background-color: rgb(0, 157, 255, 0.5);
+}
+
+.shop1 button:hover{
+    background-color: rgba(0, 77, 124, 0.5);
+}
+
+.shop2{
+    background-color: rgba(97, 126, 0, 0.5);
+}
+
+.shop2 button{
+    background-color: rgba(97, 126, 0, 0.5);
+}
+
+.shop2 button:hover{
+    background-color: rgba(37, 48, 0, 0.5);
+}
+
+.shop1 .image{
+    left: -40px;
+    top: 80px;
+    height: 250px;
+}
+
+.shop2 .image{
+    left: -30px;
+}
+
+.productbtn a{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productbtn button{
+    margin-top: 8px;
+    width: 95%;
+    height: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+}
